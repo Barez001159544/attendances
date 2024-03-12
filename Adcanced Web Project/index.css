@@ -1,0 +1,698 @@
+*, body{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E0C6C6;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+}
+header{
+    width: 100vw;
+    height: 80px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+header .fa-bars{
+    font-size: 30px;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+.menuBanner {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    padding: 20vw;
+    z-index: 5;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.menuBanner ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+.menuBanner ul li a{
+    font-size: 10vw;
+    color: #111111;
+    text-decoration: none;
+}
+.menuBanner ul li a:hover{
+    font-weight: bold;
+}
+.menuBanner ul li{
+    text-align: center;
+    list-style: none;
+    margin-bottom: 5vw;
+}
+.menuBanner button{
+    width: 20vw;
+    height: 20vw;
+    background-color: tomato;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    font-size: 7vw;
+}
+.top{
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    margin-top: 80px;
+}
+/* @keyframes peImage{
+    25%{
+        background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.50)), url("images/pexels-vlada-karpovich-4050287.jpg");
+        transform: scale(0.75);
+    }
+    50%{
+        background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.50)), url("images/pexels-vlada-karpovich-4050287.jpg");
+        transform: scale(0.75);
+    }
+    75%{
+        background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.50)), url("images/pexels-vlada-karpovich-4050287.jpg");
+        transform: scale(0.75);
+    }
+    100%{
+        background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.50)), url("images/pexels-vlada-karpovich-4050287.jpg");
+        transform: scale(0.75);
+    }
+} */
+@keyframes changeBg
+        {
+            0%   {
+                /* background-size: cover; */
+                background-image: url("images/pexels-vlada-karpovich-4050287.jpg");
+            }
+            25%   {
+                /* background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.50)), url("images/pexels-vlada-karpovich-4050287.jpg"); */
+                /* background-size: cover; */
+                background-image: url("images/pexels-pixabay-159213.jpg");
+            }
+            50%   {
+                /* background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.50)), url("images/pexels-anastasiya-gepp-1462630.jpg"); */
+                /* background-size: cover; */
+                background-image: url("images/pexels-anastasiya-gepp-1462630.jpg");
+            }
+            100%   {
+                /* background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.50)), url("images/pexels-vlada-karpovich-4050287.jpg"); */
+                /* background-size: cover; */
+                background-image: url("images/pexels-vlada-karpovich-4050287.jpg");
+            }
+        }
+        @keyframes changeCo
+        {
+            0%   {
+                /*  */
+            }25%   {
+                /*  */
+            }50%   {
+                /*  */
+            }100%   {
+                /*  */
+            }
+        }
+.top .right .pe{
+    width: 100vw;
+    height: 70vh;
+    border-bottom-left-radius: 52px;
+    border-bottom-right-radius: 52px;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.50)), url("images/pexels-vlada-karpovich-4050287.jpg"); */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    animation-name: changeBg;
+    animation-duration:20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.top .right .pe .quotation{
+    display: none;
+}
+.top .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    /* z-index: 0; */
+    text-align: center;
+    padding: 1vw;
+    margin-top: 10vw;
+}
+.top .left p{
+    margin: 13vw;
+}
+.top .left .quotation{
+    padding: 0 3vw;
+    background-color: #21A3CA;
+    width: 80vw;
+    height: 40vw;
+    border-radius: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.top .left .quotation i{
+    font-size: 10vw;
+}
+.top .left .quotation p{
+    margin: 0;
+    font-style: italic;
+}
+.center1{
+    margin-top: 10vw;
+    width: 100vw;
+}
+/* .center1:hover .percents .percent1{
+    transform: translateY(-50px);
+} */
+#test1{
+    transform: translateY(00px);
+    transition: all ease-out .3s;
+}
+#test2{
+    transform: translateY(00px);
+    transition: all ease-out .8s;
+}
+#test3{
+    transform: translateY(00px);
+    transition: all ease-out 1s;
+}
+#test4{
+    transform: translateY(00px);
+    transition: all ease-out 1.3s;
+}
+/* .center1:hover .percents .percent1:first-child{
+    transform: translateY(00px);
+    transition: all ease-out .3s;
+}
+.center1:hover .percents .percent1:nth-child(2){
+    transform: translateY(00px);
+    transition: all ease-out .8s;
+}
+.center1:hover .percents .percent1:nth-child(3){
+    transform: translateY(00px);
+    transition: all ease-out 1s;
+}
+.center1:hover .percents .percent1:nth-child(4){
+    transform: translateY(00px);
+    transition: all ease-out 1.3s;
+} */
+.center1 .percents .percent1{
+    transform: translateY(300px);
+    /* transition: all ease-out .3s; */
+}
+.center1 .percents div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.center1 .percents h2{
+    margin-bottom: 7vw;
+    margin-top: 15vw;
+}
+
+.center1 .percents .circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    /* background: conic-gradient(white 25%, red 0%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: all ease-out 3s; */
+}
+.center1 .percents .one .circle{
+    background: conic-gradient(rgba(255, 255, 255, 0.695) 25%, #E76363 0%);
+}
+.center1 .percents .two .circle{
+    background: conic-gradient(rgba(255, 255, 255, 0.695) 50%, #E3E763 0%);
+}
+.center1 .percents .three .circle{
+    background: conic-gradient(rgba(255, 255, 255, 0.695) 75%, #63A5E7 0%);
+}
+.center1 .percents .four .circle{
+    background: conic-gradient(rgba(255, 255, 255, 0.695) 10%, #A9E763 0%);
+}
+/* .center1 .percents .circle:hover{
+    background: conic-gradient(white 25%, red 0%);
+} */
+.center1 .percents .circle .innerCircle{
+    background-color: #E0C6C6;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.center1 .percents .circle .innerCircle h3{
+    font-size: 5vw;
+    line-height: 50%;
+}
+.center1 p{
+    padding: 7vw;
+    text-align: center;
+}
+.center2 .boxCont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.center2 h2{
+    text-align: center;
+    margin: 10vw 0;
+}
+.center2 .boxCont .box{
+    margin-bottom: 5vw;
+    width: 100vw;
+    height: 25vw;
+    /* background-image: linear-gradient(130deg, #21A3CA, #13596E); */
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("images/pexels-caleb-oquendo-3042432.jpg") no-repeat;
+    /* background-image: linear-gradient(to bottom, #21A3CA 20%, #414141); */
+    background-position: center;
+    position: relative;
+    color: white;
+    background-size: cover;
+    /* z-index: -1; */
+}
+/* .center2 .boxCont .box .boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 7vw;
+    text-align: center;
+} */
+.center2 .boxCont .box .boxes h3{
+    font-size: 8vw;
+    text-align: center;
+    line-height: 25vw;
+}
+.center2 .boxCont .box .boxes p{
+    margin: 5vw 0vw;
+    font-size: 0;
+}
+/* .center2 .boxCont .box h3{
+    margin: 10vw;
+} */
+.center2 .boxCont .boxCover{
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    transition: 0.5s all ease-out;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(130deg, #4F4F4F, #111111);
+    font-size: 0;
+}
+.center2 .boxCont .box:hover .boxCover{
+    width: 100%;
+    font-size: 4vw;
+    padding: 6vw;
+    right: 0;
+}
+.center2 .boxCont .box .boxCover h1{
+    text-align: center;
+    font-size: 900%;
+}
+.center2 .boxCont .box .boxCover h3{
+    text-align: center;
+    font-size: 10vw;
+    color: tomato;
+    transition: 0.3s all ease-out;
+}
+.center3{
+    background: radial-gradient(#7F2666, #1D8CDC);
+    width: 90%;
+    height: 70vw;
+    padding: 10vw;
+    margin: 10vw auto;
+    border-radius: 52px;
+}
+.center3 .texts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.center3 .texts h2{
+    color: white;
+}
+.center3 .texts .getStarted{
+    background-color: #221F28;
+    width: 70%;
+    height: 18vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    color:#21A3CA;
+    text-decoration: none;
+    position: relative;
+}
+.center3 .texts .getStarted h3, .center3 .texts .getStarted i{
+    z-index: 0;
+    transition: all ease-out 0.5s;
+}
+.center3 .texts .getStarted .bCover{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    transition: all ease-out 0.5s;
+    border-radius: 15px;
+}
+.center3 .texts .getStarted:hover .bCover{
+    width: 100%;
+}
+.center3 .texts .getStarted:hover h3, .center3 .texts .getStarted:hover i{
+    color: #111111;
+    transition: all ease-out 0.5s;
+}
+.center3 img{
+    display: none;
+}
+footer {
+    background-color: #221F28;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+footer h2{
+    background-color: #21A3CA;
+    width: 70%;
+    height: 70px;
+    line-height: 70px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+}
+footer .pp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid #21A3CA;
+}
+footer .pp ul{
+    margin: 10vw 0 0 0;
+    padding-inline-start: 0px;
+    list-style: none;
+}
+footer .pp ul:last-child{
+    padding-bottom: 15px;
+}
+footer .pp ul li a{
+    color: white;
+    text-decoration: none;
+}
+footer .pp ul li a:hover{
+    color: #4F4F4F;
+}
+footer .sp{
+    margin: 10vw 0 5vw 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+}
+footer .sp a{
+    width: 40px;
+    height: 40px;
+    color: #111111;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+footer .sp a:hover{
+   transform: scale(1.5);
+    /* line-height: 60px; */
+    font-size: 20px;
+}
+
+footer .sp img{
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .top .left .quotation{
+        height: 30vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    h3{
+        font-size: 3vw;
+    }
+    .top .left p{
+        font-size: 3vw;      
+    }
+    .center1 .percents{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .center1 p{
+        font-size: 3vw;
+    }
+    .center1 .percents .circle{
+        width: 150px;
+        height: 150px;
+    }
+    /* .center1 .percents .circle:hover{
+        background: conic-gradient(white 25%, red 0%);
+    } */
+    .center1 .percents .circle .innerCircle{
+        width: 75px;
+        height: 75px;
+    }
+    .center1 .percents .circle .innerCircle h3{
+        font-size: 3vw;
+    }
+    .center3{
+        height: 50vw;
+    }
+    .center3 .getStarted h3, .center3 .getStarted i{
+        font-size: 4vw;
+    }
+    footer .pp{
+        width: 70%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .sp{
+        margin: 3vw 0 0 0;
+        align-items:center;
+    }
+    footer .sp img{
+        width: 60%;
+        height: 60%;
+        display: block;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    h2{
+        font-size: 2.5vw;
+    }
+    .top{
+        display: flex;
+        flex-direction: row;
+    }
+    .top .left{
+        width: 40%;
+        text-align: left;
+        align-items: flex-start;
+        padding:0 0 0 10%;
+        color: #221F28;
+    }
+    .top .left p{
+        margin: 3vw 0 0 0;
+        font-size: 1.7vw;
+    }
+    .top .left .quotation{
+        display: none;
+    }
+    .top .right{
+        align-items: center;
+        align-content: center;
+    }
+    .top .right .pe{
+        width: 25%;
+        height: 65%;
+        right: 15%;
+        top: 20%;
+        border-radius: 52px;
+    }
+    /* .top .right .pe .quotation */
+    .top .right .pe .quotation{
+        padding: 0 3vw;
+        margin: 95% 0 0 30%;
+        background-color: #21A3CA;
+        width: 25vw;
+        height: 12vw;
+        border-radius: 42px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+    .top .right .pe .quotation i{
+        font-size: 5vw;
+    }
+    .top .right .pe .quotation p{
+        margin: 0;
+        font-style: italic;
+    }
+    /* header{
+        position: relative;
+    } */
+    .menuBanner {
+        margin-left: 98vw;
+        background-color: white;
+        width: 60vw;
+        height: 80px;
+        padding:0 5vw;
+        z-index: 5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        transition: all ease-in-out .5s;
+        border-radius: 100px;
+    }
+    .showMenu{
+        margin-left: 40vw;
+    }
+    .menuBanner ul{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 60px;
+        /* margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0; */
+    }
+    .menuBanner ul li a{
+        font-size: 1.5vw;
+    }
+    .menuBanner ul li{
+        text-align:unset;
+        list-style: none;
+        /* margin-bottom: 5vw; */
+    }
+    .menuBanner button{
+        width: 2vw;
+        height: 2vw;
+        background-color: tomato;
+        color: white;
+        border-radius: 50%;
+        border: none;
+        font-size: 1vw;
+    }
+    .center1 .percents{
+        padding: 0 7vw;
+        justify-content: space-evenly;
+    }
+    .center1 .percents .percent1 h2{
+        margin: 4vw 0;
+    }
+    .center1 .percents .percent1 .circle{
+        width: 18vw;
+        height: 18vw;
+    }
+    .center1 .percents .percent1 .circle .innerCircle{
+        width: 9vw;
+        height: 9vw;
+    }
+    .center1 p{
+        font-size: 2vw;
+        padding: 8vw 16vw;
+    }
+    .center2 h2{
+        margin: 0 0 8vw 0;
+    }
+    .center2{
+        margin: 0 auto;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .center2 .boxCont{
+        width: 70vw;
+        margin: 0;
+    }
+    .center2 .boxCont .box{
+        width: 70vw;
+    }
+    .center3{
+        display: flex;
+        flex-direction: row;
+        height: 30vw;
+        justify-content: end;
+        justify-items: end;
+        align-items: flex-end;
+        padding: 0 5vw 0 10vw;
+    }
+    .center3 .texts{
+        /* padding: 5vw 0; */
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .center3 .texts .getStarted{
+        height: 8vw;
+    }
+    .center3 .texts h2{
+        text-align: left;
+    }
+    .center3 .texts .getStarted h3, .center3 .texts .getStarted i{
+        font-size: 30px;
+    }
+    .center3 img{
+        display: block;
+        width: 42vw;
+        height: 37vw;
+    }
+    footer h2{
+        width: 35vw;
+        margin-right: 38vw;
+    }
+}

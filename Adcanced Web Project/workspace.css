@@ -1,0 +1,520 @@
+*,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+      }
+      .left {
+        color: white;
+        width: 20%;
+        height: 100%;
+        background-color: #303030;
+      }
+      .left h1 {
+        font-size: 28px;
+        height: 12%;
+        text-align: center;
+        line-height: 300%;
+        border-bottom: 1px solid white;
+      }
+      .left .ul {
+        margin-top: 30%;
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        /* margin: auto 0; */
+        /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+            justify-content: center; */
+      }
+      .offClickEffect {
+        height: 18%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-around;
+        border-bottom: 2px solid #707070;
+        padding-right: 20%;
+        transition: all ease-in-out 0.3s;
+      }
+      .left .ul .students {
+        border-top: solid 2px #707070;
+      }
+      .onClickEffect {
+        width: 100%;
+        display: flex;
+        justify-items: center;
+        justify-content: space-around;
+        border-bottom: 2px solid #707070;
+        transition: all ease-in-out 0.3s;
+        /*  */
+        background-color: #21a3ca;
+        flex-direction: column;
+        align-items: center;
+        padding: 10% 0 10% 0;
+        height: 46%;
+      }
+      .iconFontUp{
+        font-size: 64px;
+        transition: all ease-in-out 0.3s;
+      }
+      /* .left .ul .li:hover{
+            background-color: #21A3CA;
+            flex-direction: column;
+            align-items: center;
+            padding: 10% 0 10% 0;
+            height: 46%;
+        } */
+      .left .ul .li:hover {
+        cursor: pointer;
+        /* background-color: rgba(56, 56, 56, 0.882); */
+      }
+      /* .left .ul .li:hover i{
+            font-size: 64px;
+        } */
+      .iconFontDown {
+        font-size: 24px;
+        transition: all ease-in-out 0.3s;
+      }
+      .left .ul .li p {
+        font-size: 24px;
+        transition: all ease-in-out 0.3s;
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5%;
+        width: 80%;
+        height: 100%;
+        background-color: #e0c6c6;
+      }
+      .right .title {
+        height: 12%;
+        width: 100%;
+        background-color: #303030;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        font-size: 9px;
+        text-align: center;
+      }
+      .right .title h1 {
+        width: 50%;
+        height: 50%;
+        line-height: 35px;
+        text-align: center;
+      }
+      .right .title .subject {
+        border-right: solid 2px #707070;
+      }
+      .right .elements {
+        width: 100%;
+        height: 85%;
+        background-color: #e0c6c6;
+        position: relative;
+        overflow-y: scroll;
+      }
+      .right .elements::-webkit-scrollbar {
+        display: none;
+      }
+      .right .elements div {
+        width: 100%;
+        height: 100%;
+      }
+      .right .elements .studentsSection {
+        display: flex;
+        flex-direction: row;
+      }
+      .right .elements .studentsSection .metadata{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
+      .right .elements .studentsSection .metadata h3{
+        padding-left: 5%;
+        height: 10%;
+        line-height: 50px;
+      }
+      .right .elements .studentsSection .metadata .names{
+        margin-top: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        height: 90%;
+      }
+      .right .elements .studentsSection .metadata .names li{
+        padding-left: 5%;
+        list-style: none;
+        text-align: left;
+        height: 60px;
+        background-color: #E4E4E4;
+        /* box-shadow: 0px 2px 5px rgb(0 0 0 / 50%); */
+        line-height: 60px;
+        transition: all ease-in-out 0.3s;
+        border-right: 1px solid rgb(184, 184, 184);
+        border-bottom: 1px solid rgb(184, 184, 184);
+        border-top: 1px solid rgb(184, 184, 184);
+        border-left: 1px solid rgb(184, 184, 184);
+      }
+      /* .right .elements .studentsSection .metadata .names li:hover{
+        transform: translateY(-5px);
+      } */
+      .right .elements .studentsSection .data{
+        width: 80%;
+        height: 100%;
+        /* margin-left: 20%; */
+        overflow-x: scroll;
+        /* box-shadow: inset 10px 2px -5px rgb(0 0 0 / 50%); */
+      }
+      .right .elements .studentsSection .data::-webkit-scrollbar {
+        display: none;
+      }
+      .right .elements .studentsSection .data .dates{
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-around; */
+        margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+      }
+      .right .elements .studentsSection .data .dates li{
+        list-style: none;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        padding: 0 10%;
+      }
+      .right .elements .studentsSection .data .info{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 2px; */
+        margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+      }
+      .right .elements .studentsSection .data .info .eachStd{
+        /* width: 100%; */
+        /* background-color: #E4E4E4;
+        box-shadow: 0px 2px 5px rgb(0 0 0 / 50%); */
+      }
+      .right .elements .studentsSection .data .info .absDays{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-around; */
+        height: 60px;
+        line-height: 60px;
+        /* background-color: #E4E4E4; */
+        transition: all ease-in-out 0.3s;
+      }
+      .right .elements .studentsSection .data .info .absDays li{
+        padding: 0 10%;
+        background-color: #E4E4E4;
+        border-bottom: 1px solid rgb(184, 184, 184);
+        border-top: 1px solid rgb(184, 184, 184);
+      }
+      .right .elements .studentsSection .data .info li{
+        list-style: none;
+        /* padding: 0 10%; */
+      }
+      /* ------------------------------------------- */
+      .right .elements .addStudentsSection {
+        display: none;
+        background-color: #E4E4E4;
+        /* display: flex;
+        flex-direction: column; */
+        padding: 3.5% 6%;
+        margin: 4% 0 0 0;
+        height: 90%;
+        border-radius: 5px;
+        /* box-shadow: 0px 2px 5px rgb(0 0 0 / 50%); */
+      }
+      .right .elements .addStudentsSection form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .right .elements .addStudentsSection form .inputs{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+        /* background-color: aqua; */
+        /* margin-bottom: 5%; */
+      }
+      .right .elements .addStudentsSection form .note{
+        width: 100%;
+        /* background-color: aqua; */
+        display: block;
+        flex-direction: column;
+        /* border-bottom: solid #9A9A9A 1px; */
+      }
+      .right .elements .addStudentsSection form .note .noteEach{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: solid #9A9A9A 1px;
+      }
+      .right .elements .addStudentsSection form .submitBtn{
+        background-color: #303030;
+        border-radius: 10px;
+        width: 200px;
+        height: 50px;
+        border: none;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        align-self: flex-end;
+      }
+      .right .elements .addStudentsSection form .submitBtn:hover p{
+        width: 20%;
+        opacity: 100%;
+      }
+      .right .elements .addStudentsSection form .submitBtn p{
+        width: 0;
+        transition: all ease-in-out 0.3s;
+        opacity: 0%;
+      }
+      .right .elements .addStudentsSection form .submitBtn:hover i{
+        font-size: 15px;
+      }
+      .right .elements .addStudentsSection form .submitBtn i{
+        margin-left: 10px;
+        font-size: 20px;
+        transition: all ease-in-out 0.3s;
+      }
+      .right .elements .addStudentsSection form .inputs .each{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 46%;
+        border-bottom: solid #9A9A9A 1px;
+      }
+      .right .elements .addStudentsSection form .inputs .each span{
+        height: 35%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .right .elements .addStudentsSection form .inputs .each span i{
+        color: rgb(170, 170, 170);;
+      }
+      .right .elements .addStudentsSection form .inputs input{
+        width: 100%;
+        height: 50%;
+        background-color: transparent;
+        border: none;
+      }
+      .right .elements .addStudentsSection form .inputs input:focus{
+        outline: none;
+        /* background-color: #303030;
+        color: white; */
+        border-bottom: 2px solid gray;
+      }
+      /* ---------------------------------------- */
+      .right .elements .qrCodeSection {
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+      .right .elements .qrCodeSection .allQr{
+        width: 700px;
+        height: 350px;
+        background-color: #303030;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+      }
+      .right .elements .qrCodeSection .allQr .justQr{
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+      }
+      .right .elements .qrCodeSection .allQr .justQr .qrCode{
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        padding: 10px;
+      }
+      .right .elements .qrCodeSection .allQr .scan{
+        width: 50%;
+        height: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        font-size: 28px;
+      }
+      .right .elements .qrCodeSection .allQr .scan h1{
+        font-size: 150px;
+      }
+      .logOutSect{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(137, 43, 226, 0.407);
+        position: absolute;
+        display: none;
+      }
+      @media only screen and (max-width: 880px) {
+        .left h1{
+          font-size: 3vw;
+        }
+        .left .ul .li{
+          padding-right: 0;
+        }
+      }
+      @media only screen and (max-width: 714px) {
+        body{
+          flex-direction: column-reverse;
+          overflow-y: hidden;
+        }
+        .left{
+          width: 100vw;
+          height: 10%;
+          display: flex;
+          flex-direction: row;
+        }
+        .left h1{
+          margin-block-start: 0em;
+          margin-block-end: 0em;
+          width: 0%;
+          height: 100%;
+          margin: 0;
+          opacity: 0;
+        }
+        .left .ul{
+          height: 100%;
+          width: 100%;
+          margin: 0;
+          flex-direction: row;
+        }
+        .left .ul .li{
+          height: 100%;
+          flex-direction: column;
+          /*  */
+        }
+        .left .ul .li i{
+          border-bottom: none;
+          font-size: 24px;
+        }
+        .left .ul .li p{
+          font-size: 12px;
+        }
+        .left .ul .students{
+          border-top: 0;
+        }
+        .offClickEffect {
+          height: 0%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-items: center;
+          justify-content: space-around;
+          border-bottom: none;
+          padding: 1% 20px 1% 0;
+          transition: all ease-in-out 0.3s;
+        }
+        .onClickEffect {
+          width: 100%;
+          display: flex;
+          justify-items: center;
+          justify-content: space-around;
+          border-bottom: none;
+          transition: all ease-in-out 0.3s;
+          /*  */
+          background-color: #21a3ca;
+          flex-direction: column;
+          align-items: center;
+          padding: 1% 0 1% 0;
+          height: 0%;
+        }
+        .iconFontUp{
+          font-size: 64px;
+          transition: all ease-in-out 0.3s;
+        }
+        .right{
+          width: 100%;
+        }
+        .right .title{
+          height: 70px;
+          font-size: 50%;
+        }
+        .right .elements .studentsSection .metadata h3, .dates li{
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .right .elements .studentsSection .data .dates li {
+          line-height: 16px;
+        }
+        .right .elements .studentsSection .data .dates{
+          height: 6%;
+        }
+        .right .elements .studentsSection .metadata h3 {
+          height: 6%;
+        }
+        .right .elements .studentsSection .metadata {
+          justify-content: start;
+          font-size: 12px;
+        }
+        .right .elements .studentsSection .data .info .absDays li {
+          font-size: 12px;
+        }
+        .right .elements .studentsSection .metadata .names li {
+          overflow:hidden;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .right .elements .qrCodeSection .allQr .scan h2 {
+          font-size: 1em;
+        }
+        .right .elements .qrCodeSection .allQr .scan h1 {
+          font-size: 100px;
+        }
+        .right .title{
+          height: 70px;
+          font-size: 35%;
+        }
+        .right .elements .qrCodeSection .allQr {
+          width: 400px;
+          height: 200px;
+        }
+      }
