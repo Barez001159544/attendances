@@ -21,4 +21,14 @@ The QR Attendance System is a web-based application developed using HTML, CSS, J
 
 - PHP: Server-side scripting language used for handling backend operations such as user authentication and data processing.
 
-![Screenshot (43)](https://github.com/Barez001159544/attendances/assets/85757765/03f08478-8be7-44a5-8d4f-87fcde94ec2e)
+![Web 1920 – 6](https://github.com/Barez001159544/attendances/assets/85757765/a5ed6a52-4a4e-4717-aac5-355f5ec82d91)
+
+![Web 1920 – 7](https://github.com/Barez001159544/attendances/assets/85757765/b494bda6-5135-4f69-a7a1-b8ff87b0eb25)
+
+![Web 1920 – 8](https://github.com/Barez001159544/attendances/assets/85757765/ca0399f7-1f89-487d-bd96-cbbc78e7f3fb)
+
+![Web 1920 – 9](https://github.com/Barez001159544/attendances/assets/85757765/e6d224ad-1e08-4287-b3ce-f26b0de5d8d4)
+
+![Web 1920 – 11](https://github.com/Barez001159544/attendances/assets/85757765/2130a1da-c560-409e-ba0b-0e917b2f9791)
+
+![Web 1920 – 12](https://github.com/Barez001159544/attendances/assets/85757765/9b29c3c5-df91-487e-88c7-6ac2da1392c5)
